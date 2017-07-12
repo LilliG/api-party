@@ -19,8 +19,8 @@ class Pokémon extends Component {
                 const pokémon = {
                     name: data.name,
                     frontSprite: data.sprites.front_default,
-                    height: data.height,
-                    weight: data.weight,
+                    height: data.height/10,
+                    weight: data.weight/10,
                     baseExperience: data.base_experience,
                 }
                 this.setState({ pokémon })
@@ -41,8 +41,8 @@ class Pokémon extends Component {
             <div className="pokémon">
                 <img src={frontSprite} alt="pokémon sprite front" />
                 <h2>{name}</h2>
-                <h3>height: {height}</h3>
-                <h3>weight: {weight}</h3>
+                <h3>height: {height} m</h3>
+                <h3>weight: {weight} kg</h3>
                 <h3>base exp: {baseExperience}</h3>
             </div>
         )
