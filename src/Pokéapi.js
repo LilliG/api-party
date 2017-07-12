@@ -9,12 +9,12 @@ class Pokéapi extends Component {
     }
 
     handleChange = (ev) => {
-        this.setState({ pokémonName: ev.target.value })
+        this.setState({ pokémonName: ev.target.value})
     }
 
     handleSubmit = (ev) => {
         ev.preventDefault()
-        this.props.history.push(`/pokéapi/${this.state.pokémonName}`)
+        this.props.history.push(`/pokéapi/${this.state.pokémonName.toLowerCase()}`)
         this.setState({ pokémonName: '' })
     }
 
