@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import { Route, Switch, NavLink } from 'react-router-dom'
 import Github from './Github'
+import Nasa from './Nasa'
 import Pokéapi from './Pokéapi'
 
 class App extends Component {
@@ -18,12 +19,16 @@ class App extends Component {
               <NavLink to="/github">Github API</NavLink>
             </li>
             <li>
+              <NavLink to="/nasa">NASA API</NavLink>
+            </li>
+            <li>
               <NavLink to="/pokéapi">Pokéapi</NavLink>
             </li>
           </ul>
         </div>
         <Switch>
           <Route path='/pokéapi' component={Pokéapi}/>
+          <Route path='/nasa' component={Nasa}/>
           <Route path='/github' component={Github}/>
           <Route render= {() => <p>To get started, click one of the links above</p>}/>
         </Switch>
