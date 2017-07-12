@@ -43,7 +43,7 @@ class Pokémon extends Component {
                 <h2>{name}</h2>
                 <h3>height: {height}</h3>
                 <h3>weight: {weight}</h3>
-                <h3>base experience: {baseExperience}</h3>
+                <h3>base exp: {baseExperience}</h3>
             </div>
         )
     }
